@@ -1,0 +1,11 @@
+.rules {
+    margin: 8% 5%;
+    min-height: 50vh;
+    background:var(--white);
+    padding:3%;
+    box-shadow:var(--box-shadow);
+}
+body{
+    background:var(--light-color);
+
+}
