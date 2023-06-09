@@ -1,0 +1,450 @@
+ .doping {
+    min-height: calc(100vh - 20rem);
+ }
+
+ .ust-kisim {
+     margin-top: 2%;
+     padding-top: 5%;
+     padding-bottom:2%;
+     background: var(--light-color);
+ }
+
+ .ust-kisim .bilgi {
+     text-align: center;
+     padding: 2% 10%;
+ }
+
+ .ust-kisim .bilgi h2{
+    font-size:4rem;
+    margin-bottom:1rem;
+    color:var(--main-color);
+ }
+ .ust-kisim .bilgi p{
+    font-size:2rem;
+    color: #777;
+ }
+
+ .ust-kisim .icons-container {
+     padding: 1% 10%;
+     width: 100%;
+     justify-content: space-between;
+     display: -ms-grid;
+     display: grid;
+     -ms-grid-columns: (minmax(10rem, 1fr))[auto-fit];
+     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+     gap: 8rem;
+ }
+
+ .ust-kisim .icons {
+     text-align: center;
+     /* background: #f7f7f7; */
+     padding: 3rem 2rem;
+ }
+
+ .ust-kisim .icons-container .icons img {
+     height: 8rem;
+     border:var(--border);
+     border-radius:50%;
+     padding:8%
+ }
+
+ .ust-kisim .icons-container .icons i {
+     font-size: 3rem;
+     color: var(--grey);
+ }
+
+
+ .ust-kisim .icons-container .icons p {
+     font-size: 1.7rem;
+     /* line-height: 2; */
+     color: #777;
+ }
+ .ust-kisim .button{
+    text-align:center;
+
+ }
+ .ust-kisim .button a{
+    font-size:1.5rem;
+    border: .1rem solid var(--main-color);
+    background: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+    text-transform: capitalize;
+    text-align: center;
+    padding: .2rem 1rem;
+    font-size: 1.4rem;
+    border-radius: 3rem;
+
+ }
+ .dopings{
+    margin-top:5%;
+ }
+ .dopings h1{
+    font-size:3rem;
+    text-align:center;
+    margin-bottom:3rem;
+ }
+ .dopings .box-container{
+    display:block;
+ }
+
+ .dopings .box-container .box {
+    width: 100%;
+    margin: 0rem auto;
+    border-radius: .5rem;
+     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+    background: #fff;
+    padding:0% 10%;
+    padding-top:2%;
+    border-bottom:var(--border);
+
+}
+
+.dopings .blog_btn {
+    /* text-transform: uppercase; */
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--yellow);
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom .4s;
+    /* padding-left: 15px; */
+}
+
+.dopings .btn:hover {
+    opacity: 1;
+}
+
+.dopings .box-container .box .image {
+    height: 40rem;
+    width: 55%;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+}
+
+.dopings .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.dopings .box-container .box .content {
+    height: 100%;
+    width: 35%;
+    padding: 2rem;
+    margin:0% 3%;
+    text-align:center;
+}
+.dopings .box-container .box .content h2{
+    font-size:1.8rem;
+}
+.dopings .box-container .box .content a{
+    font-size:1.4rem;
+}
+.dopings .box-container .box .content img{
+    height:10rem;
+}
+
+.dopings .box-container .box:nth-child(even) {
+    flex-flow: row-reverse;
+    flex-wrap: wrap;
+    background:var(--light-color);
+}
+
+.dopings .box-container .box:nth-child(even) .content {
+    text-align: center;
+}
+
+.dopings .box-container .box .content h3 {
+    color: var(--red);
+    font-size: 3rem;
+}
+
+.dopings .box-container .box .content p {
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.accordion-container {
+    background: var(--light-color);
+    margin-bottom: 4rem;
+    padding:2rem 10%;
+    /* margin: 0rem 6%; */
+}
+
+.accordion-container h2 {
+    font-size:3rem;
+    margin:3rem 0rem;
+    text-align:center;
+}
+
+.accordion .accordion-item {
+    background:var(--white);
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0rem 4rem;
+}
+
+.accordion .accordion-item button[aria-expanded=true] {
+    /* border-bottom: 1px solid var(--main-color); */
+}
+
+.accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: var(--black);
+    font-size: 1.5rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+    cursor: pointer;
+    color: var(--black);
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+    cursor: pointer;
+    color: var(--black);
+    border: 1px solid var(--black);
+}
+
+.accordion button .accordion-title {
+    padding: .5rem 1.5em .5rem 0;
+    display:flex;
+    gap:3rem;
+}
+.accordion button .accordion-title .two-title{
+    align-items:center;
+    justify-content:center;
+   margin-top:1rem;
+}
+.accordion button .accordion-title img{
+    height:6rem;
+}
+.accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+margin-top:2rem;
+    right: 0;
+    width:40px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 22px;
+}
+
+.accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 19px;
+    left: 9px;
+    width: 22px;
+    height: 1.5px;
+    background: currentColor;
+}
+
+.accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: 19px;
+    width: 1.5px;
+    height: 22px;
+    background: currentColor;
+}
+
+.accordion button[aria-expanded=true] {
+    color: var(--black);
+}
+
+.accordion button[aria-expanded=true] .icon::after {
+    width: 0;
+}
+
+.accordion button[aria-expanded=true]+.accordion-content {
+    opacity: 1;
+    max-height: 100%;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+    color: var(--black);
+    margin-left:8%;
+}
+
+.accordion .accordion-content p {
+    font-size: 1.4rem;
+    margin: .2rem 0;
+    color: var(--black);
+}
+.accordion .accordion-content img{
+    max-height:35rem;
+    object-fit:cover;
+    margin-top:3%;
+}
+.accordion .accordion-content a{
+    font-size:1.3rem;
+    margin-top:2%;
+}
+.price{
+    display:block;
+    text-align:center;
+    padding:0rem 10%;
+    margin-top:5%
+}
+.price h2{
+    font-size:3rem;
+    font-weight:600;
+}
+.price .info{
+    font-size:1.5rem;
+    margin-top:2rem;
+    padding:0rem 5%;
+    margin-bottom:3%;
+}
+.price img{
+/* max-height:50rem; */
+width:100%;
+object-fit:cover;
+}
+.price .price-info{
+    margin-top:3%;
+    text-align:left;
+    font-size:1.5rem;
+    padding:0rem 5% !important;
+    margin-bottom:3%;
+}
+.price .price-info ul {
+    list-style:outside;
+    margin-left:1%;
+    margin:2% 0rem;
+
+}
+.price .border{
+    border:var(--border);
+}
+.how-to{
+    background:var(--light-color);
+    margin:5% 0rem;
+    padding:3% 10%;
+}
+.how-to h2{
+    font-size:3rem;
+    font-weight:600;
+    text-align:center;
+    margin-bottom:3rem;
+}
+.how-to ul li{
+    margin-top:2rem;
+    font-size:1.5rem;
+}
+.how-to ul li i{
+    font-size:3rem;
+    border:var(--border);
+    border-radius:50%;
+padding:1.5rem 2rem;
+}
+
+@media(max-width:991px){
+    .ust-kisim {
+        margin-top: 2%;
+        padding-top: 10%;
+    }
+    .ust-kisim .icons-container {
+
+        grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+        gap: 4rem;
+    }
+
+
+    .dopings .box-container .box .image {
+        height: 30rem;
+        width: 100%;
+    }
+    .dopings .box-container .box .image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .dopings .box-container .box .content {
+        height: 100%;
+        width: 100%;
+        padding: 2rem;
+    }
+    .dopings .box-container .box:nth-child(even) .content {
+        text-align: left;
+    }
+}
+@media(max-width:600px){
+    .ust-kisim {
+        margin-top: 2%;
+        padding-top: 15%;
+    }
+    .ust-kisim .icons-container {
+
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        gap: 4rem;
+    }
+    .accordion button .icon {
+        display: inline-block;
+        position: absolute;
+        top: 15px;
+        right: 0;
+        width: 22px;
+        height: 22px;
+        border: 1px solid;
+        border-radius: 22px;
+    }
+
+    .accordion button .icon::before {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 9px;
+        left: 5px;
+        width: 10px;
+        height: 2px;
+        background: currentColor;
+    }
+
+    .accordion button .icon::after {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 5px;
+        left: 9px;
+        width: 2px;
+        height: 10px;
+        background: currentColor;
+    }
+}
+@media(max-width:450px){
+    .ust-kisim {
+        margin-top:10%;
+        padding-top: 20%;
+    }
+    .ust-kisim .icons-container {
+
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        gap: 4rem;
+    }
+}
+

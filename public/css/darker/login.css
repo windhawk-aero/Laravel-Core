@@ -1,0 +1,134 @@
+ .login-form-container {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     padding: 4% 0%;
+     min-height: 80vh;
+
+ }
+ 
+ .login-form-container form {
+     width: 23%;
+     padding: 2rem;
+     margin: 2rem;
+     margin-top: 6%;
+ }
+ 
+ .login-form-container form h3 {
+     font-size: 2.5rem;
+     color: var(--white);
+     text-align: center;
+     font-weight: 500;
+     margin-bottom: 2rem;
+     color:var(--white);
+ }
+ 
+ .login-form-container form .box {
+     width: 100%;
+     margin: 2rem 0;
+     font-size: 1.4rem;
+     border-bottom: var(--border);
+     color: var(--black);
+     text-transform: none;
+     padding:.7rem 1rem;
+ }
+ 
+ .login-form-container form .btn {
+     text-align: center;
+     width: 100%;
+     margin: 1.5rem 0;
+ }
+ 
+ .login-form-container form p {
+     font-size: 1.4rem;
+     margin-top: 3rem;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     color:var(--white);    
+ }
+ 
+ .login-form-container form p a {
+     color: var(--white);
+     text-decoration: underline;
+ }
+ 
+ .login-form-container form .section {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     margin: 2rem 0rem;
+ }
+ 
+ .login-form-container form .section a {
+     margin-top: 2rem;
+     color: var(--white);
+     justify-content: center;
+     align-items: center;
+     font-size: 1.4rem;
+ }
+ 
+ .btn-submit {
+    box-shadow: 0px 0px 5px 5px var(--purple);
+     cursor: pointer;
+     text-transform: capitalize;
+     text-align: center;
+     display: block;
+     width: 40%;
+     padding: .6rem 1rem;
+     font-size: 1.7rem;
+     border-radius: 3rem;
+     margin-top: 1rem;
+     background:none;
+     color: white;
+ }
+ 
+ .btn-submit:hover {
+    box-shadow: 0px 0px 5px 5px var(--purple);
+    background: linear-gradient(to left, #af00ff, #130d7a);
+ }
+ 
+ @media(max-width:1500px) {
+     .login-form-container form {
+         width: 30%;
+     }
+ }
+ 
+ @media(max-width:1280px) {
+     .login-form-container form {
+         width: 35%;
+         margin-top: 10%;
+     }
+ }
+ 
+ @media(max-width:991px) {
+     .login-form-container form {
+         width: 50%;
+     }
+ }
+ 
+ @media(max-width:768px) {
+     .login-form-container form {
+         width: 70%;
+         margin-top: 15%;
+     }
+ }
+ 
+ @media(max-width:450px) {
+     .login-form-container form {
+         width: 100%;
+         margin-top: 30%;
+     }
+     .login-form-container form .section {
+         display: block;
+         margin: 0rem 0rem;
+     }
+     .btn-submit {
+         margin-bottom: 2rem;
+     }
+     .login-form-container form p {
+         text-align: left;
+         margin-top: 1rem !important;
+     }
+ }

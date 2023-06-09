@@ -1,0 +1,145 @@
+.register-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    padding: 4% 0%;
+    min-height: 80vh;
+}
+
+.register-form-container form {
+    width: 23%;
+    padding: 2rem;
+    margin: 2rem;
+    margin-top: 5%;
+}
+
+.register-form-container form .choose {
+    display: flex;
+}
+
+.register-form-container form .choose label {
+    font-size: 1.4rem;
+    margin-right: 2rem;
+    color: rgb(138, 138, 138);
+}
+
+.register-form-container form .choose input {
+    margin-right: .2rem;
+}
+
+.register-form-container form h3 {
+    font-size: 2.5rem;
+    color: var(--grey);
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.register-form-container form .box {
+    width: 100%;
+    margin: 2rem 0;
+    font-size: 1.4rem;
+    border-bottom: var(--border);
+    color: var(--black);
+    text-transform: none;
+}
+
+.register-form-container form .btn {
+    text-align: center;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+.register-form-container form p {
+    font-size: 1.4rem;
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.register-form-container form p a {
+    color: var(--dark-color);
+    text-decoration: underline;
+}
+
+.register-form-container form .section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem 0rem;
+}
+
+.register-form-container form .section a {
+    margin-top: 2rem;
+    color: var(--dark-color);
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.btn-submit {
+    background: white;
+    border: .1rem solid var(--main-color);
+    color: grey;
+    cursor: pointer;
+    text-transform: capitalize;
+    text-align: center;
+    display: block;
+    width: 40%;
+    padding: .6rem 1rem;
+    font-size: 1.7rem;
+    border-radius: 3rem;
+    margin-top: 1rem;
+}
+
+.btn-submit:hover {
+    background: var(--main-color);
+    color: var(--white);
+}
+
+@media(max-width:1500px) {
+    .register-form-container form {
+        width: 30%;
+    }
+}
+
+@media(max-width:1280px) {
+    .register-form-container form {
+        width: 35%;
+        margin-top: 10%;
+    }
+}
+
+@media(max-width:991px) {
+    .register-form-container form {
+        width: 50%;
+    }
+}
+
+@media(max-width:768px) {
+    .register-form-container form {
+        width: 70%;
+        margin-top: 15%;
+    }
+}
+
+@media(max-width:450px) {
+    .register-form-container form {
+        width: 100%;
+        margin-top: 30%;
+    }
+    .register-form-container form .section {
+        display: block;
+        margin: 0rem 0rem;
+    }
+    .btn-submit {
+        margin-bottom: 2rem;
+    }
+    .register-form-container form p {
+        text-align: left;
+        margin-top: 1rem !important;
+    }
+}

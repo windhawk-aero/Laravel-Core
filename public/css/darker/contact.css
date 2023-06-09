@@ -1,0 +1,179 @@
+
+
+.contact {
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    background-size: cover;
+    padding: 8% 5% 5% 5%;
+}
+
+.contact .contact-heading {
+    color: var(--white);
+    font-size: 3rem;
+    padding: 1rem;
+    padding-top: 0rem;
+    text-align: center;
+    letter-spacing: .2rem;
+    font-weight: 500;
+    width: 100%;
+}
+
+.contact .content {
+    text-align: center;
+}
+
+.contact .content h3 {
+    font-size: 5rem;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.contact .content p {
+    font-weight: 300;
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.contact form {
+    text-align: center;
+    padding: 2rem;
+
+    box-shadow: 0px 0px 10px 2px var(--purple);
+    width: 80%;
+    margin-top: 2rem;
+}
+.contact .bottom{
+    color:var(--white);
+}
+.contact form .bottom {
+    float: left;
+    font-size: 1.4rem;
+}
+
+.contact form .inputBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .inputBox input {
+    padding: 1rem;
+    font-size: 1.4rem;
+    background: var(--white);
+    text-transform: none;
+    margin: 1rem 0;
+    border-bottom: var(--border);
+    width: 40%;
+}
+
+.contact form textarea {
+    padding: 1rem;
+    font-size: 1.4rem;
+    background: var(--white);
+    text-transform: none;
+    margin: 3rem 0;
+    border: var(--border);
+    height: 20rem;
+    resize: none;
+    width: 100%;
+}
+
+.contact .icons-container {
+    margin-top: 5%;
+    width: 80%;
+    justify-content: space-between;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 10rem;
+}
+
+.contact .icons-container .icons {
+    text-align: center;
+    /* background: #f7f7f7; */
+    padding: 3rem 2rem;
+}
+
+.contact .icons-container .icons i {
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.contact .icons-container .icons h3 {
+    padding: .5rem 0;
+    font-size: 2.3rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--white);
+    margin-top: 2rem;
+}
+
+.contact .icons-container .icons p {
+    font-size: 1.5rem;
+    line-height: 2;
+    color: var(--white);
+}
+
+.btn-card {
+   
+box-shadow: 0px 0px 10px 2px var(--purple);
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    text-transform: capitalize;
+    padding: .5rem 2rem;
+    font-size: 1.4rem;
+    border-radius: 3rem;
+    float: left;
+    /* text-align: center; */
+    margin-top: 2rem;
+}
+
+.btn-card:hover {
+    box-shadow: 0px 0px 5px 5px var(--purple);
+    background: linear-gradient(to left, #af00ff, #130d7a);
+}
+
+@media(max-width:1280px) {
+    .contact {
+        padding: 15% 10% 5% 10%;
+    }
+    .contact .icons-container {
+        width: 100%;
+    }
+    .contact form {
+        width: 100%;
+    }
+}
+
+@media(max-width:768px) {
+    .contact {
+        padding: 20% 10% 5% 10%;
+    }
+    .contact form {
+        margin-top: 0;
+    }
+    .contact form .inputBox input {
+        width: 100%;
+    }
+    .contact .icons-container {
+        -ms-grid-columns: (minmax(35rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+        gap: 2rem;
+    }
+}
+
+@media(max-width:450px) {
+    .contact {
+        padding: 40% 10% 5% 10%;
+    }
+    .contact .icons-container {
+        -ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+        gap: 5rem;
+    }
+}

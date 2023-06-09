@@ -1,0 +1,82 @@
+.blog-detail {
+    margin: 5rem 5%;
+}
+
+.blog-detail .one-section {
+    height: 55rem;
+}
+
+.blog-detail .one-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-detail .two-section {
+    position: relative;
+    margin: 0rem 5%;
+    margin-top: -10rem;
+    padding: 4rem 6rem;
+    background: #fffcfc;
+    display: flex;
+    height: auto;
+    overflow: auto;
+}
+
+.blog-detail .two-section .content h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.blog-detail .two-section .content h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.blog-detail .two-section .content p {
+    margin-bottom: 3rem;
+    line-height: 1.6;
+    font-size: 1.4rem;
+}
+
+@media(max-width:1280px) {
+    .blog-detail .two-section {
+        position: relative;
+        margin: 0rem 4%;
+        margin-top: -10rem;
+        padding: 2rem 4rem;
+        background: #fffcfc;
+        height: auto;
+        min-height: 100%;
+        overflow: auto;
+    }
+    .blog-detail .two-section .content h3 {
+        margin-top: 2rem;
+    }
+    .blog-detail .two-section .content p {
+        margin-top: 1.5rem;
+        line-height: 1.6;
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width:768px) {
+    .blog-detail {
+        margin: 0;
+    }
+    .blog-detail .one-section {
+        height: 50rem;
+    }
+    .blog-detail .two-section {
+        position: relative;
+        margin: 0rem 6%;
+        margin-top: -10rem;
+        padding: 2rem 4rem;
+        height: auto;
+        overflow: auto;
+    }
+    .blog-detail .two-section .content h3 {
+        font-size: 2.5rem;
+    }
+}
