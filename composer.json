@@ -44,22 +44,17 @@
         "spiral/roadrunner": "^2.8.2",
         "tanmuhittin/laravel-google-translate": "^2.2",
         "yajra/laravel-datatables": "^10.0",
-        "yusuftogtay/generator-builder": "dev-LG-1-Configuration-Detailing",
-        "yusuftogtay/l5-repository": "dev-master",
+        "yusuftogtay/generator-builder": "dev-master",
         "yusuftogtay/laravel-generator": "dev-master"
     },
     "repositories": [
         {
             "type": "path",
-            "url": "modules/l5-repository"
+            "url": "modules/Laravel-Generator"
         },
         {
             "type": "path",
-            "url": "modules/laravel-generator"
-        },
-        {
-            "type": "path",
-            "url": "modules/generator-builder"
+            "url": "modules/Generator-Builder"
         }
     ],
     "require-dev": {

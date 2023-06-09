@@ -1,0 +1,6 @@
+[submodule "modules/Laravel-Generator"]
+	path = modules/Laravel-Generator
+	url = https://github.com/windhawk-aero/Laravel-Generator
+[submodule "modules/Generator-Builder"]
+	path = modules/Generator-Builder
+	url = https://github.com/windhawk-aero/Generator-Builder

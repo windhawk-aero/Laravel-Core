@@ -185,8 +185,6 @@ return [
         /*
          * Package Service Providers...
          */
-        YusufTogtay\Repository\Providers\RepositoryServiceProvider::class,
-        //YusufTogtay\GeneratorBuilder\GeneratorBuilderServiceProvider::class,
         Yajra\DataTables\DataTablesServiceProvider::class,
         Spatie\EloquentSortable\EloquentSortableServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,

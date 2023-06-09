@@ -1,12 +1,13 @@
 <?php
 
-use YusufTogtay\Constants\Enums\HtmlType;
-use YusufTogtay\Constants\Enums\RuleType;
-use YusufTogtay\Constants\Enums\CommandType;
-use YusufTogtay\Constants\Enums\DataBaseType;
-use YusufTogtay\Extensions\HtmlTypeExtension;
-use YusufTogtay\Extensions\CommandTypeExtension;
-use YusufTogtay\Extensions\DataBaseTypeExtension;
+use YusufTogtay\LaravelGenerator\Constants\Enums\HtmlType;
+use YusufTogtay\LaravelGenerator\Constants\Enums\RuleType;
+use YusufTogtay\LaravelGenerator\Constants\Enums\CommandType;
+use YusufTogtay\LaravelGenerator\Constants\Enums\DataBaseType;
+use YusufTogtay\LaravelGenerator\Extensions\HtmlTypeExtension;
+use YusufTogtay\LaravelGenerator\Extensions\CommandTypeExtension;
+use YusufTogtay\LaravelGenerator\Extensions\DataBaseTypeExtension;
+
 
 return [
     'views' => [
@@ -15,9 +16,9 @@ return [
         'field-detail-template' => 'generator-builder::field-detail-template',
         'relation-field-template' => 'generator-builder::relation-field-template',
     ],
-    'txtDbType' => DataBaseTypeExtension::getAllTypes(new DataBaseType()),
-    'htmlType' => HtmlTypeExtension::getAllTypes(new HtmlType()),
-    'commandType' => CommandTypeExtension::getAllTypes(new CommandType()),
+    //'txtDbType' => DataBaseTypeExtension::getAllTypes(new DataBaseType),
+    //'htmlType' => HtmlTypeExtension::getAllTypes(new HtmlType),
+    //'commandType' => CommandTypeExtension::getAllTypes(new CommandType),
     /**
      ********************************
      * Rules
@@ -78,7 +79,7 @@ return [
             'validation' => 'after_or_equal:',
             'active' => true
         ],
-        RuleType::AlPHA => [
+        RuleType::ALPHA => [
             'description' => 'The field under validation must be entirely alphabetic characters.',
             'descriptionHtml' => '<p>The field under validation must be entirely alphabetic characters.</p>',
             'link' => 'https://laravel.com/docs/10.x/validation#rule-alpha',
@@ -245,7 +246,7 @@ return [
             'descriptionHtml' => '<p>The field under validation must have a different value than <code>field</code>.</p>',
             'link' => 'https://laravel.com/docs/10.x/validation#rule-different',
             'htmlType' => [HtmlType::CHECKBOX, HtmlType::RADIO, HtmlType::TOGGLE_SWITCH, DataBaseType::DATE, DataBaseType::DATE_TIME, DataBaseType::TIMESTAMP, DataBaseType::TEXT, DataBaseType::MEDIUM_TEXT, DataBaseType::LONG_TEXT, DataBaseType::LONG_TEXT, DataBaseType::CHAR, DataBaseType::STRING, DataBaseType::BIG_INTEGER, DataBaseType::SMALL_INTEGER, DataBaseType::INTEGER, DataBaseType::DOUBLE, DataBaseType::FLOAT, DataBaseType::DECIMAL],
-            'dbType' => DataBaseTypeExtension::getAllTypes(new DataBaseType),
+            'dbType' => [],
             'validation' => 'different:',
             'active' => true,
         ],
@@ -327,7 +328,7 @@ return [
             'descriptionHtml' => '<p>The field under validation must be included in the given list of enum values.</p>',
             'link' => 'https://laravel.com/docs/10.x/validation#rule-enum',
             'htmlType' => [HtmlType::SELECT],
-            'dbType' => DataBaseTypeExtension::getAllTypes(new DataBaseType),
+            'dbType' => [],
             'validation' => 'enum:',
             'active' => false,
         ],
@@ -409,7 +410,7 @@ return [
             'link' => 'https://laravel.com/docs/10.x/validation#rule-gt',
             'htmlType' => [HtmlType::TEXT, HtmlType::NUMBER, HtmlType::DOUBLE, HtmlType::TEXTAREA, HtmlType::IMAGE, HtmlType::FILE],
             'dbType' => [DataBaseType::TEXT, DataBaseType::INTEGER, DataBaseType::MEDIUM_TEXT, DataBaseType::SMALL_INTEGER, DataBaseType::LONG_TEXT, DataBaseType::BIG_INTEGER, DatabaseType::DECIMAL, DataBaseType::DOUBLE, DataBaseType::FLOAT],
-            'validation' => 'gt:',,
+            'validation' => 'gt:',
             'active' => true,
         ],
         RuleType::GTE => [
@@ -499,7 +500,7 @@ return [
             'link' => 'https://laravel.com/docs/10.x/validation#rule-lt',
             'htmlType' => [HtmlType::TEXT, HtmlType::NUMBER, HtmlType::DOUBLE, HtmlType::TEXTAREA, HtmlType::IMAGE, HtmlType::FILE],
             'dbType' => [DataBaseType::TEXT, DataBaseType::INTEGER, DataBaseType::MEDIUM_TEXT, DataBaseType::SMALL_INTEGER, DataBaseType::LONG_TEXT, DataBaseType::BIG_INTEGER, DatabaseType::DECIMAL, DataBaseType::DOUBLE, DataBaseType::FLOAT],
-            'validation' => 'lt:',,
+            'validation' => 'lt:',
             'active' => true,
         ],
         RuleType::LTE => [
