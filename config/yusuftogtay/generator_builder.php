@@ -8,10 +8,6 @@ use YusufTogtay\GeneratorBuilder\Extensions\DataBaseTypeExtension;
 
 
 
-
-
-
-
 return [
     'views' => [
         'builder' => 'generator-builder::builder',
@@ -37,7 +33,7 @@ return [
      * validation: validation rule
      */
     'ruleType' => [
-        RuleType::ACCEPTED => [
+        Ruletype::ACCEPTED => [
             'description' => 'The field under validation must be yes, on, 1, or true. This is useful for validating "Terms of Service" acceptance.',
             'descriptionHtml' => '<p>The field under validation must be <code>"yes"</code>, <code>"on"</code>, <code>1</code>, or <code>true</code>. This is useful for validating "Terms of Service" acceptance or similar fields.</p>',
             'link' => 'https://laravel.com/docs/10.x/validation#rule-accepted',

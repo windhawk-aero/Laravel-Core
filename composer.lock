@@ -11876,7 +11876,7 @@
             "dist": {
                 "type": "path",
                 "url": "modules/Laravel-Generator",
-                "reference": "ae78c330fef7abf1d3ebad153193ef123ba97f47"
+                "reference": "5b8b458f63b143402a9a08abb7369e4127f75a56"
             },
             "require": {
                 "illuminate/support": ">=5.0",
@@ -11885,7 +11885,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "YusufTogtay\\LaravelGenerator\\": "src/"
+                    "YusufTogtay\\LaravelGenerator\\": "vendor/yusuftogtay/laravel-generator/src/"
                 }
             },
             "license": [
