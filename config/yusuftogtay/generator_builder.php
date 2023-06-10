@@ -1,12 +1,15 @@
 <?php
 
-use YusufTogtay\LaravelGenerator\Constants\Enums\HtmlType;
-use YusufTogtay\LaravelGenerator\Constants\Enums\RuleType;
-use YusufTogtay\LaravelGenerator\Constants\Enums\CommandType;
-use YusufTogtay\LaravelGenerator\Constants\Enums\DataBaseType;
-use YusufTogtay\LaravelGenerator\Extensions\HtmlTypeExtension;
-use YusufTogtay\LaravelGenerator\Extensions\CommandTypeExtension;
-use YusufTogtay\LaravelGenerator\Extensions\DataBaseTypeExtension;
+use YusufTogtay\GeneratorBuilder\Constants\Enums\HtmlType;
+use YusufTogtay\GeneratorBuilder\Constants\Enums\RuleType;
+use YusufTogtay\GeneratorBuilder\Constants\Enums\CommandType;
+use YusufTogtay\GeneratorBuilder\Constants\Enums\DataBaseType;
+use YusufTogtay\GeneratorBuilder\Extensions\DataBaseTypeExtension;
+
+
+
+
+
 
 
 return [
