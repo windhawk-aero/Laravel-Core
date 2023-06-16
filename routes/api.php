@@ -19,3 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::resource('users', \App\Http\Controllers\API\UserAPIController::class);
+
+Route::get('dataBaseType/getCompatibleHtmlTypes/{dataBaseType}', [\YusufTogtay\GeneratorBuilder\Controllers\DataBaseTypeController::class, 'getCompatibleHtmlTypes']);
