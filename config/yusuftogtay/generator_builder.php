@@ -4,6 +4,8 @@ use YusufTogtay\GeneratorBuilder\Constants\Enums\HtmlType;
 use YusufTogtay\GeneratorBuilder\Constants\Enums\RuleType;
 use YusufTogtay\GeneratorBuilder\Constants\Enums\CommandType;
 use YusufTogtay\GeneratorBuilder\Constants\Enums\DataBaseType;
+use YusufTogtay\GeneratorBuilder\Extensions\HtmlTypeExtension;
+use YusufTogtay\GeneratorBuilder\Extensions\CommandTypeExtension;
 use YusufTogtay\GeneratorBuilder\Extensions\DataBaseTypeExtension;
 
 
@@ -15,9 +17,9 @@ return [
         'field-detail-template' => 'generator-builder::field-detail-template',
         'relation-field-template' => 'generator-builder::relation-field-template',
     ],
-    //'txtDbType' => DataBaseTypeExtension::getAllTypes(new DataBaseType),
-    //'htmlType' => HtmlTypeExtension::getAllTypes(new HtmlType),
-    //'commandType' => CommandTypeExtension::getAllTypes(new CommandType),
+    'dataBaseTypes' => DataBaseTypeExtension::getAllTypes(DataBaseType::class),
+    'htmlType' => HtmlTypeExtension::getAllTypes(HtmlType::class),
+    'commandTypes' => CommandTypeExtension::getAllTypes(CommandType::class),
     /**
      ********************************
      * Rules
@@ -33,7 +35,7 @@ return [
      * validation: validation rule
      */
     'ruleType' => [
-        Ruletype::ACCEPTED => [
+        RuleType::ACCEPTED => [
             'description' => 'The field under validation must be yes, on, 1, or true. This is useful for validating "Terms of Service" acceptance.',
             'descriptionHtml' => '<p>The field under validation must be <code>"yes"</code>, <code>"on"</code>, <code>1</code>, or <code>true</code>. This is useful for validating "Terms of Service" acceptance or similar fields.</p>',
             'link' => 'https://laravel.com/docs/10.x/validation#rule-accepted',
@@ -84,7 +86,7 @@ return [
             'link' => 'https://laravel.com/docs/10.x/validation#rule-alpha',
             'htmlType' => [HtmlType::TEXT, HtmlType::TEXTAREA],
             'dbType' => [DataBaseType::LONG_TEXT, DataBaseType::TEXT, DataBaseType::MEDIUM_TEXT, DatabaseType::STRING],
-            'validation' => 'alpha:',
+            'validation' => 'alpha',
             'active' => true
         ],
         RuleType::ALPHA_DASH => [
@@ -93,7 +95,7 @@ return [
             'link' => 'https://laravel.com/docs/10.x/validation#rule-alpha-dash',
             'htmlType' => [HtmlType::TEXT, HtmlType::TEXTAREA],
             'dbType' => [DataBaseType::LONG_TEXT, DataBaseType::TEXT, DataBaseType::MEDIUM_TEXT, DatabaseType::STRING],
-            'validation' => 'alpha_dash:',
+            'validation' => 'alpha_dash',
             'active' => true
         ],
         RuleType::ALPHA_NUM => [
@@ -111,7 +113,7 @@ return [
             'link' => 'https://laravel.com/docs/10.x/validation#rule-array',
             'htmlType' => ['text'],
             'dbType' => ['string'],
-            'validation' => ['array'],
+            'validation' => 'array',
             'active' => false,
         ],
         RuleType::ASCII => [
@@ -549,7 +551,7 @@ return [
         RuleType::MIMES => [
             'description' => 'The file under validation must have a MIME type corresponding to one of the listed extensions.',
             'descriptionHtml' => '<p>The file under validation must have a MIME type corresponding to one of the listed extensions.</p>',
-            'link' => 'https://laravel.com/docs/10.x/validation#rule-mimetypes-by-extensions',
+            'link' => 'https://laravel.com/docs/10.x/validation#rule-mimes',
             'htmlType' => [HtmlType::FILE, HtmlType::IMAGE],
             'dbType' => [DataBaseType::STRING],
             'validation' => 'mimes:',
